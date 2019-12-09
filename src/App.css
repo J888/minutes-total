@@ -1,0 +1,154 @@
+body {
+  background: rgba(0,0,0,0.901);
+}
+
+#root {
+
+}
+
+#app-title {
+  color: white;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  margin: auto;
+  font-family: 'Patua One', cursive;
+  font-size: 50px;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 200px 300px auto 300px 200px;
+  grid-template-rows: 130px auto 200px 10% 20%;;
+}
+
+.MinutesInputForm {
+  display: grid;
+  grid-template-columns: 8% 13% auto 13% 8%;;
+  grid-template-rows: auto;
+
+  background: rgba(255,255,255,0.98);
+  padding-top: 20px;
+  padding-bottom: 26px;
+  border-radius: 8px;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  color: black;
+
+  border-style: solid;
+  border-color: rgba(28,121,86,0.38);
+  border-width: 43px 0px 2px 0px;
+}
+
+.MinutesInputForm h2 {
+  padding-bottom: 15px;
+  grid-column: 3;
+  margin: auto;
+}
+
+.MinutesInputForm #add-times-button {
+  grid-column-start: 3;
+  width: 42%;
+  justify-self: center;
+  height: 40px;
+  background: rgba(119,222,96,0.549);
+  border-style: none none solid none;
+  border-width: 3px;
+  border-radius: 7px;
+  font-size: 23px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.MinutesInput {
+  font-size: 26px;
+  text-align: center;
+  width: 39%;
+  min-width: 80px;
+  justify-self: center;
+
+  border-style: solid;
+  border-color: rgba(28,121,86,0.38);
+  border-width: 7px 3px 3px 3px;
+  background: unset;
+  border-radius: 7px;
+
+  outline: none;
+  color: rgba(0,0,0,0.721);
+
+  font-family: 'Roboto Mono', monospace;
+  
+}
+
+.input-container {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-bottom: 10px;
+
+  display: grid;
+}
+
+
+#total-time-number {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.action-button {
+  border-style: none;
+  border-radius: 7px;
+  font-size: 14px;
+  justify-self: center;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+#remove-all-times-button {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 0;
+  margin: 0;
+  top: -57px;
+  right: -1px;
+  background: lightcoral;
+  width: 88%;
+  height: 29px;
+  min-width: 53px;
+}
+
+#parse-text-with-times-button {
+  grid-column: 2;
+  grid-row: 1;
+  top: -56px;
+  background: rgb(252, 255, 134);
+  height: 28px;
+  width: 77%;
+  min-width: 81px;
+}
+
+#ParseTextForm {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 116px 27px;;
+
+  background: greenyellow;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#editor {
+  margin: 10px 15px;
+  grid-column: 2;
+  border-style: none;
+  border-radius: 9px;
+  padding: 6px;
+  resize: none;
+  outline: none;
+  font-family: 'Roboto Mono', monospace;
+}
